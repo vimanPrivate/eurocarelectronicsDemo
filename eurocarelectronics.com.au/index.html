@@ -1575,6 +1575,9 @@
             color: white;
             padding-top: 10px;
             padding-bottom: 10px;
+            border-radius: 10px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
         }
 
         .service-lst {
@@ -1594,12 +1597,37 @@
             border: none;
             background-color: #0968B8;
             color: white;
-            bottom: 0
+            bottom: 0;
+            border-radius: 8px;
         }
 
         .card {
             height: 550px;
             margin-top: 10px;
+            border-radius: 15px;
+
+            box-shadow: 10px 7px 5px 0px rgba(178, 190, 181, 0.75);
+            -webkit-box-shadow: 10px 7px 5px 0px rgba(178, 190, 181, 0.75);
+            -moz-box-shadow: 10px 7px 5px 0px rgba(178, 190, 181, 0.75);
+
+            width: 96%
+        }
+
+        .card-gold {
+            box-shadow: 10px 7px 5px 0px rgba(109,96,39,0.75);
+-webkit-box-shadow: 10px 7px 5px 0px rgba(109,96,39,0.75);
+-moz-box-shadow: 10px 7px 5px 0px rgba(109,96,39,0.75);
+        }
+
+        .gold-card-hd {
+            background: #6D6027;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #D3CBB8, #6D6027);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            color:black
         }
 
         .card-body {
@@ -1678,9 +1706,9 @@
                                         <span class="screen-reader-text">Menu</span>
                                         <div class="hfe-nav-menu-icon">
                                             <!-- <i aria-hidden="true" class="fas fa-bars"></i> -->
-                                             <span>
+                                            <span>
                                                 <img src="../Assets/list.png" alt="" width="30">
-                                             </span>
+                                            </span>
                                         </div>
                                     </div>
                                     <nav class="hfe-nav-menu__layout-horizontal hfe-nav-menu__submenu-arrow"
@@ -2019,7 +2047,8 @@
                         <div class="elementor-element elementor-element-bc8a743 elementor-widget elementor-widget-heading"
                             data-id="bc8a743" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 style="font-size: 28px;" class="elementor-heading-title elementor-size-default">European car upgrades, tuning
+                                <h3 style="font-size: 28px;" class="elementor-heading-title elementor-size-default">
+                                    European car upgrades, tuning
                                     &amp; Electronic Repairs specialists</h3>
                             </div>
                         </div>
@@ -2066,40 +2095,44 @@
                     data-id="b5ead9b" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
 
-                            <div class="elementor-element elementor-element-a42fe24 elementor-widget elementor-widget-heading"
-                                data-id="a42fe24" data-element_type="widget" data-widget_type="heading.default"
-                                style="border: 0px solid; background-color: rgba(255,255,255,1); ">
-                                <br>
-                                <div class="elementor-widget-container">
-                                    <div class="row" style="border: 0px solid red;">
-                                        <div class="col-md-12 col-lg-2" style="border: 0px solid;">
-                                            <img src="../Assets/ProdAUS.png" alt="" width="170">
-                                        </div>
-                                        <div class="col-md-12 col-lg-6" style="border: 0px solid; margin-top: 5px;">
-                                            <img src="../Assets/audi - toppng.com-audi-rings-logo-png-1470x1100.png"
-                                                alt="" width="100" style="border: 0px solid; margin-left: 0px;">
-                                            <img src="../Assets/1eb90756b9638b6b288139dfce79bb1c.png" alt="" width="50" style="border: 0px solid; margin-left: 30px;">
-                                            <img src="../Assets/benz.png" alt="" width="70" style="border: 0px solid; margin-left: 30px;">
-                                            <img src="../Assets/porche-pngwing.com.png" alt="" width="60" style="border: 0px solid; margin-left: 30px;">
-                                            <img src="../Assets/alpina - e27570cf94e549fa8213ee7a85295519.png" alt=""
-                                                width="80" style="border: 0px solid; margin-left: 30px;">
-                                            <img src="../Assets/BMW_logo_(gray).svg.png" alt="" width="70" style="border: 0px solid; margin-left: 30px;">
-                                        </div>
-                                        <div class="col-md-12 col-lg-4">
-                                            <button class="order-online-button">ORDER ONLINE</button>
-                                        </div>
-                                        <!-- <div class="col-lg-1">
-                                        </div> -->
+                        <div class="elementor-element elementor-element-a42fe24 elementor-widget elementor-widget-heading"
+                            data-id="a42fe24" data-element_type="widget" data-widget_type="heading.default"
+                            style="border: 0px solid; background-color: rgba(255,255,255,1); ">
+                            <br>
+                            <div class="elementor-widget-container">
+                                <div class="row" style="border: 0px solid red;">
+                                    <div class="col-md-12 col-lg-2" style="border: 0px solid;">
+                                        <img src="../Assets/ProdAUS.png" alt="" width="170">
                                     </div>
+                                    <div class="col-md-12 col-lg-6" style="border: 0px solid; margin-top: 5px;">
+                                        <img src="../Assets/audi - toppng.com-audi-rings-logo-png-1470x1100.png" alt=""
+                                            width="100" style="border: 0px solid; margin-left: 0px;">
+                                        <img src="../Assets/1eb90756b9638b6b288139dfce79bb1c.png" alt="" width="50"
+                                            style="border: 0px solid; margin-left: 30px;">
+                                        <img src="../Assets/benz.png" alt="" width="70"
+                                            style="border: 0px solid; margin-left: 30px;">
+                                        <img src="../Assets/porche-pngwing.com.png" alt="" width="60"
+                                            style="border: 0px solid; margin-left: 30px;">
+                                        <img src="../Assets/alpina - e27570cf94e549fa8213ee7a85295519.png" alt=""
+                                            width="80" style="border: 0px solid; margin-left: 30px;">
+                                        <img src="../Assets/BMW_logo_(gray).svg.png" alt="" width="70"
+                                            style="border: 0px solid; margin-left: 30px;">
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <button class="order-online-button">ORDER ONLINE</button>
+                                    </div>
+                                    <!-- <div class="col-lg-1">
+                                        </div> -->
                                 </div>
                             </div>
+                        </div>
 
 
                         <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-6992f97 mobile-align-wrap elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="6992f97" data-element_type="section"
                             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                            <div class="elementor-container elementor-column-gap-no">                             
+                            <div class="elementor-container elementor-column-gap-no">
                                 <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-fd66a2c"
                                     data-id="fd66a2c" data-element_type="column">
                                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -2152,7 +2185,8 @@
                                                             class="elementor-icon" tabindex="-1"
                                                             aria-label="Electronics Repairs">
                                                             <!-- <i aria-hidden="true" class="fas fa-microchip"></i>  -->
-                                                            <img src="../Assets/cpu.png" style="border: 0px solid; margin-top: -30px;"
+                                                            <img src="../Assets/cpu.png"
+                                                                style="border: 0px solid; margin-top: -30px;"
                                                                 width="75" />
                                                         </a>
                                                     </div>
@@ -2189,7 +2223,8 @@
                                                             class="elementor-icon" tabindex="-1"
                                                             aria-label="BGA Components Re-balling">
                                                             <!-- <i aria-hidden="true" class="fas fa-cog"></i>  -->
-                                                            <img src="../Assets/settings.png" style="border: 0px solid; margin-top: -30px;"
+                                                            <img src="../Assets/settings.png"
+                                                                style="border: 0px solid; margin-top: -30px;"
                                                                 width="75" />
                                                         </a>
                                                     </div>
@@ -2564,7 +2599,7 @@
                         <div style="background-color: white;"
                             class="elementor-element elementor-element-f24c674 elementor-widget elementor-widget-price-table"
                             data-element_type="widget" data-widget_type="price-table.default">
-                            <div class="row" style="border: 0px solid;">
+                            <div class="row" style="border: 0px solid; padding-bottom: 15px;">
                                 <div class="col-sm-12 col-md-6 col-lg-3" style="border: 0px solid;">
                                     <div class="card">
                                         <div class="card-hd">
@@ -2717,8 +2752,8 @@
 
 
                                 <div class="col-sm-12 col-md-6 col-lg-3" style="border: 0px solid;">
-                                    <div class="card">
-                                        <div class="card-hd">
+                                    <div class="card card-gold">
+                                        <div class="card-hd gold-card-hd">
                                             <h3 class="elementor-price-table__heading">
                                                 GOLD</h3>
                                             <span class="elementor-price-table__subheading" style="font-size: 14px;">
@@ -2867,6 +2902,7 @@
                                         </button>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -4043,7 +4079,8 @@
                         <div class="elementor-element elementor-element-ebe1320 elementor-widget elementor-widget-text-editor"
                             data-id="ebe1320" data-element_type="widget" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <h2 style="font-size: 14px;">Euro Car Electronics | Chip Tuning Sunshine Coast and Brisbane | Performance
+                                <h2 style="font-size: 14px;">Euro Car Electronics | Chip Tuning Sunshine Coast and
+                                    Brisbane | Performance
                                     Upgrades Sunshine Coast | Performance Upgrades Brisbane | Vehicle Electrical Repairs
                                     Sunshine Coast | Vehicle Electronic Repairs Brisbane</h2>
                             </div>
